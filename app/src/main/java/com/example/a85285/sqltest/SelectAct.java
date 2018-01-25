@@ -20,7 +20,7 @@ import java.util.Date;
 public class SelectAct extends AppCompatActivity implements View.OnClickListener {
 
     //定义控件，用于接受ID
-    private Button s_delete, s_conf, s_back;
+    private Button s_delete, s_conf, s_back;//对应三个按钮
     private ImageView s_img;
     private VideoView s_video;
     private EditText s_tv;
