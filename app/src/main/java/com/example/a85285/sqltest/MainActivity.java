@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();//初始化
-
     }
 
     public void initView() {
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                cursor.moveToPosition(position);//给出有标位置
+                cursor.moveToPosition(position);//给出游标位置
                 Intent i = new Intent(MainActivity.this, SelectAct.class);//创建intent对象
                 i.putExtra(NotesDB.ID, cursor.getInt(cursor.getColumnIndex(NotesDB.ID)));
                 i.putExtra(NotesDB.CONTENT, cursor.getString(cursor.getColumnIndex(NotesDB.CONTENT)));
